@@ -1,3 +1,54 @@
 /*:checked + label{
 	text-decoration: line-through;
 }*/
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+}
+#todo{
+	width: 50%;
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 2%;
+}
+#list{
+	min-height: 300px;
+	background-color: #e5e5e5;
+}
+h1{
+	text-align: center
+}
+ol{
+	padding-top: 3%;
+}
+li{
+	border-bottom: 1px solid #000;
+	width: 90%;
+	font-family: 'Cookie', cursive;
+	font-size:20px;
+	line-height: 5px;
+	padding-top: 2%;
+}
+input{
+	margin-bottom: 2%;
+}
+.smallBtn{
+	background-color: #ff7497;
+	color: #fff;
+	border: none;
+	border-radius: 70%;
+	height: 20px;
+	font-size: 12px;
+}
+.smallBtn:hover{
+	color: #000;
+}
+input[type=text]{
+	text-align: center;
+	margin: 0 auto;
+	background-color: #caedf2;
+	border: none;
+	width: 100%;
+	max-width: 500px;
+	padding: 1%;
+}

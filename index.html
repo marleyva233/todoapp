@@ -9,25 +9,27 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 		<!-- bootstrap CDN -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+		<!-- custom fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Cookie|Lato" rel="stylesheet">
 		<!-- my custom css -->
 		<link rel="stylesheet" href="css/main.css">
 	</head>
-	<body class="bg-dark text-light">
+	<body>
+		<h1>To-Do App</h1>
 		<div id="todo">
 			<section>
-				<h1>To-Do App</h1>
 				<input type="text" 
 				placeholder="What do you need to do?"
 				v-model="newTask"
 				v-on:keyup.enter="addTask">
 			</section>
-			<ul>
-				<li v-for="task in todoList">
+			<ol id="list">
+				<li v-for="task in todoList" contenteditable="true" draggable="true">
 					<label>{{ task }}</label>
-					<button v-on:click="removeTask(task)">X</button>
+					<button v-on:click="removeTask(task)" class="smallBtn">x</button>
 				</li>
-			</ul>
-			<button v-on:click="clearList()">Clear List</button>
+			</ol>
+			<button v-on:click="clearList()" class="btn btn-dark">Clear List</button>
 		</div>
 <!-- Scripts -->
 	<!-- jQuery -->
