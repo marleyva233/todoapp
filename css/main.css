@@ -7,6 +7,7 @@ body{
 }
 #todo{
 	width: 50%;
+	min-width: 300px;
 	max-width: 500px;
 	margin: 0 auto;
 	padding: 2%;
@@ -22,12 +23,9 @@ ol{
 	padding-top: 3%;
 }
 li{
-	border-bottom: 1px solid #000;
 	width: 90%;
 	font-family: 'Cookie', cursive;
 	font-size:20px;
-	line-height: 5px;
-	padding-top: 2%;
 }
 input{
 	margin-bottom: 2%;
