@@ -17,7 +17,8 @@ body{
 	background-color: #e5e5e5;
 }
 h1{
-	text-align: center
+	text-align: center;
+	font-family: 'Cookie', cursive;
 }
 ol{
 	padding-top: 3%;
@@ -49,4 +50,19 @@ input[type=text]{
 	width: 100%;
 	max-width: 500px;
 	padding: 1%;
+}
+#addBtn{
+	display: none;
+	border:none;
+}
+
+@media only screen and (max-width: 500px) {
+	input[type=text] {
+		width: 64%;
+		display: inline-block;
+	}
+	#addBtn {
+		width: 35%;
+		display: inline-block;
+	}
 }

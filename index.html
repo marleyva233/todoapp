@@ -22,6 +22,7 @@
 				placeholder="What do you need to do?"
 				v-model="newTask"
 				v-on:keyup.enter="addTask">
+				<button id="addBtn" v-on:click="addTask">Add Task</button>
 			</section>
 			<ol id="list">
 				<li v-for="task in todoList" contenteditable="true" draggable="true">
